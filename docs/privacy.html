@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー - Kesu Camera</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        .container { max-width: 640px; margin: 0 auto; padding: 40px 20px; }
+        .header {
+            margin-bottom: 32px;
+        }
+        .back-link {
+            color: #4ecdc4;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .back-link:hover { text-decoration: underline; }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-top: 16px;
+            margin-bottom: 4px;
+        }
+        .updated {
+            color: #888;
+            font-size: 13px;
+        }
+        .highlight-box {
+            background: rgba(78, 205, 196, 0.08);
+            border: 1px solid rgba(78, 205, 196, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 28px;
+        }
+        .highlight-box h2 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #4ecdc4;
+            margin-bottom: 12px;
+        }
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .highlight-item .icon { font-size: 16px; }
+        .section {
+            margin-bottom: 28px;
+        }
+        .section h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .section p {
+            font-size: 14px;
+            color: #aaa;
+            margin-bottom: 8px;
+        }
+        .nav-links {
+            text-align: center;
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid #2a2a2a;
+        }
+        .nav-links a {
+            color: #4ecdc4;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 0 12px;
+        }
+        .nav-links a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="back-link">&larr; サポートページへ</a>
+            <h1>プライバシーポリシー</h1>
+            <p class="updated">最終更新日: 2026年3月12日</p>
+        </div>
+
+        <div class="section">
+            <p>無音カメラ・位置情報削除 - Kesu Camera（以下「本アプリ」）は、利用者のプライバシーを最優先に設計されています。本プライバシーポリシーは、本アプリにおける情報の取り扱いについて説明するものです。</p>
+        </div>
+
+        <div class="highlight-box">
+            <h2>基本方針</h2>
+            <div class="highlight-item"><span class="icon">☁️</span> 外部サーバーへのデータ送信は一切行いません</div>
+            <div class="highlight-item"><span class="icon">📡</span> 本アプリはオフラインで完全に動作します</div>
+            <div class="highlight-item"><span class="icon">👤</span> アカウント登録・ログインは不要です</div>
+            <div class="highlight-item"><span class="icon">📊</span> 利用状況の分析・トラッキングは行いません</div>
+            <div class="highlight-item"><span class="icon">📢</span> 広告は表示しません</div>
+        </div>
+
+        <div class="section">
+            <h2>1. 収集する情報</h2>
+            <p>本アプリは、利用者の個人情報を収集しません。</p>
+            <p>撮影した写真・ビデオ、パスコード、アプリの設定情報はすべて端末内にのみ保存され、外部に送信されることはありません。</p>
+        </div>
+
+        <div class="section">
+            <h2>2. カメラ・マイクの使用</h2>
+            <p>本アプリは写真・ビデオの撮影のためにカメラとマイクへのアクセスを要求します。これらはアプリ内での撮影目的にのみ使用され、映像・音声データが外部に送信されることはありません。</p>
+        </div>
+
+        <div class="section">
+            <h2>3. 位置情報の使用</h2>
+            <p>本アプリは位置情報へのアクセスを要求する場合があります。これは写真のEXIFデータに位置情報を含めるか選択するためです。位置情報は端末内でのみ処理され、外部に送信されることはありません。デフォルトでは位置情報は自動削除されます。</p>
+        </div>
+
+        <div class="section">
+            <h2>4. Face ID / Touch ID</h2>
+            <p>本アプリは鍵付きアルバムの認証のためにFace ID / Touch IDを使用します。生体認証データはiOSのSecure Enclaveで処理され、本アプリがアクセスすることはできません。</p>
+        </div>
+
+        <div class="section">
+            <h2>5. データの保存場所</h2>
+            <p>すべてのデータは端末のアプリ専用領域に保存されます。</p>
+            <p>・写真・ビデオ: アプリ内部ストレージ（暗号化対応）<br>
+            ・パスコード: Keychain（iOS標準のセキュア領域）<br>
+            ・設定情報: UserDefaults（アプリ内）</p>
+            <p>これらのデータは他のアプリからアクセスすることはできません。</p>
+        </div>
+
+        <div class="section">
+            <h2>6. データの削除</h2>
+            <p>利用者はアプリ内からいつでも写真・ビデオを削除できます。アプリ自体を削除すると、保存されたすべてのデータ（写真・ビデオ・設定）が完全に削除されます。Keychainに保存されたパスコードはアプリ削除後も端末に残る場合があります。</p>
+        </div>
+
+        <div class="section">
+            <h2>7. 第三者への提供</h2>
+            <p>本アプリは利用者のデータを第三者に提供、販売、共有することはありません。第三者のSDK、分析ツール、広告ネットワークは一切使用していません。</p>
+        </div>
+
+        <div class="section">
+            <h2>8. 子どものプライバシー</h2>
+            <p>本アプリは年齢制限なく利用可能ですが、個人情報を一切収集しないため、児童オンラインプライバシー保護法(COPPA)等の対象となる情報収集は行っていません。</p>
+        </div>
+
+        <div class="section">
+            <h2>9. ポリシーの変更</h2>
+            <p>本ポリシーは必要に応じて更新される場合があります。重要な変更がある場合は、アプリのアップデート時にお知らせします。</p>
+        </div>
+
+        <div class="section">
+            <h2>10. お問い合わせ</h2>
+            <p>本ポリシーに関するご質問がある場合は、<a href="mailto:getonnews@gmail.com" style="color: #4ecdc4;">getonnews@gmail.com</a> までお問い合わせください。</p>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">サポート</a>
+            <a href="terms.html">利用規約</a>
+        </div>
+
+        <p style="text-align: center; color: #555; font-size: 12px; margin-top: 24px;">
+            &copy; 2026 Kesu Camera. All rights reserved.
+        </p>
+    </div>
+</body>
+</html>
