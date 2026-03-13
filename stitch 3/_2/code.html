@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#44e47e",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#112117",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between p-4 sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">close</span>
+</button>
+<h2 class="text-lg font-bold tracking-tight text-slate-900 dark:text-slate-100">確認とプライバシー</h2>
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">share</span>
+</button>
+</header>
+<main class="flex-1 overflow-y-auto pb-24">
+<!-- Main Image Preview (Prominent) -->
+<div class="px-4 py-2">
+<div class="relative w-full aspect-[3/4] rounded-xl overflow-hidden shadow-2xl bg-slate-200 dark:bg-slate-800">
+<img alt="Captured scenic mountain landscape" class="w-full h-full object-cover" data-alt="Cinematic wide shot of a misty mountain range at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOoyCBUcpVdbP-hgRjcYTeztN533yOPqLjyGFa-jXyVxdOGhRDqOwqKAdSEDTCEbNxhD7fffqBGzWHcXo9H_ScsPPOBDRBngbL7C2Hmh73Ag9hQyhK64LCKHyxBdLmtJVwmz4RxGhBLZ4Y_vx1vNkd07pg5Yvgks_wdDEAHEDxbjyRscVulCx8EIUO0Q1UbohCS91JZRNn4itV16Wu7Kt_5FVDPI23E31647bqq-sYkSJoOahzWxDbmhS2_MgpCxUfcAzDXj-mAfs"/>
+<!-- Overlay indicator for active tool -->
+<div class="absolute bottom-4 left-4 bg-black/40 backdrop-blur-md px-3 py-1.5 rounded-full flex items-center gap-2 border border-white/10">
+<span class="material-symbols-outlined text-primary text-sm">edit_attributes</span>
+<span class="text-xs font-medium text-white">プレビューモード</span>
+</div>
+</div>
+</div>
+<!-- Privacy & Metadata Section -->
+<section class="mt-4 px-4 overflow-x-auto scrollbar-hide">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary">edit</span>
+<h3 class="text-lg font-bold tracking-tight">編集ツール</h3>
+</div>
+<div class="flex gap-4 pb-2">
+<button class="flex flex-col items-center gap-2 min-w-[72px] p-3 rounded-xl bg-slate-100 dark:bg-slate-800/50 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors shrink-0">
+<span class="material-symbols-outlined text-slate-700 dark:text-slate-300">blur_on</span>
+<span class="text-xs font-medium">ぼかし</span>
+</button>
+<button class="flex flex-col items-center gap-2 min-w-[72px] p-3 rounded-xl bg-slate-100 dark:bg-slate-800/50 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors shrink-0">
+<span class="material-symbols-outlined text-slate-700 dark:text-slate-300">grid_view</span>
+<span class="text-xs font-medium">モザイク</span>
+</button>
+<button class="flex flex-col items-center gap-2 min-w-[72px] p-3 rounded-xl bg-slate-100 dark:bg-slate-800/50 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors shrink-0">
+<span class="material-symbols-outlined text-slate-700 dark:text-slate-300">draw</span>
+<span class="text-xs font-medium">手書き</span>
+</button>
+<button class="flex flex-col items-center gap-2 min-w-[72px] p-3 rounded-xl bg-slate-100 dark:bg-slate-800/50 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors shrink-0">
+<span class="material-symbols-outlined text-slate-700 dark:text-slate-300">auto_fix_high</span>
+<span class="text-xs font-medium">補正</span>
+</button>
+</div>
+</section><section class="mt-6 px-4">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary">security</span>
+<h3 class="text-lg font-bold tracking-tight">プライバシー設定</h3>
+</div>
+<div class="bg-slate-100 dark:bg-slate-800/50 rounded-xl p-2 space-y-1">
+<!-- Metadata Toggles -->
+<label class="flex items-center justify-between p-3 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-800 cursor-pointer">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-500">location_on</span>
+<span class="text-base font-medium">位置情報を含める</span>
+</div>
+<input class="h-6 w-11 appearance-none rounded-full bg-slate-300 dark:bg-slate-700 checked:bg-primary relative transition-colors cursor-pointer after:content-[''] after:absolute after:top-1 after:left-1 after:bg-white after:w-4 after:h-4 after:rounded-full after:transition-transform checked:after:translate-x-5 focus:ring-0 focus:ring-offset-0" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-3 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-800 cursor-pointer">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-500">calendar_month</span>
+<span class="text-base font-medium">日時を含める</span>
+</div>
+<input class="h-6 w-11 appearance-none rounded-full bg-slate-300 dark:bg-slate-700 checked:bg-primary relative transition-colors cursor-pointer after:content-[''] after:absolute after:top-1 after:left-1 after:bg-white after:w-4 after:h-4 after:rounded-full after:transition-transform checked:after:translate-x-5 focus:ring-0 focus:ring-offset-0" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-3 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-800 cursor-pointer">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-500">smartphone</span>
+<span class="text-base font-medium">端末情報を含める</span>
+</div>
+<input class="h-6 w-11 appearance-none rounded-full bg-slate-300 dark:bg-slate-700 checked:bg-primary relative transition-colors cursor-pointer after:content-[''] after:absolute after:top-1 after:left-1 after:bg-white after:w-4 after:h-4 after:rounded-full after:transition-transform checked:after:translate-x-5 focus:ring-0 focus:ring-offset-0" type="checkbox"/>
+</label>
+</div>
+<p class="text-xs text-slate-500 dark:text-slate-400 mt-3 px-1 italic">注：これらを無効にすると、保存前にEXIFデータが完全に削除されます。</p>
+</section>
+</main>
+<!-- Bottom Editing Bar (One-Hand Accessible) -->
+<div class="fixed bottom-0 left-0 right-0 bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 p-4 pb-8 flex flex-col gap-4 z-20">
+<!-- Editing Tools -->
+<!-- Primary Action Button -->
+<button class="w-full bg-primary hover:brightness-110 text-background-dark font-bold py-4 rounded-xl shadow-lg shadow-primary/20 flex items-center justify-center gap-2 transition-transform active:scale-95"><span class="material-symbols-outlined">verified_user</span> メタデータを削除して保存</button>
+</div>
+</body></html>

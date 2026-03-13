@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>ja</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>PrivateCamera</string>
+    <key>CFBundleDisplayName</key>
+    <string>無音カメラ</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>5</string>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    <key>UILaunchScreen</key>
+    <dict/>
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>armv7</string>
+    </array>
+    <key>UIRequiresFullScreen</key>
+    <true/>
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+    </array>
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    <key>NSCameraUsageDescription</key>
+    <string>カメラで写真やビデオを撮影するためにアクセスが必要です。</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>ビデオ撮影時に音声を記録するためにマイクへのアクセスが必要です。</string>
+    <key>NSFaceIDUsageDescription</key>
+    <string>プライベートBOXへのアクセスにFace IDを使用します。</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>写真に位置情報を含める場合に使用します。位置情報はデフォルトで削除されます。</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>撮影した写真をカメラロールに保存するためにアクセスが必要です。</string>
+</dict>
+</plist>

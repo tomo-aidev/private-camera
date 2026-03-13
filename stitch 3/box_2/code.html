@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .filled-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-10 flex items-center justify-between bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md p-4">
+<div class="w-12"></div>
+<h1 class="text-lg font-bold tracking-tight text-slate-900 dark:text-slate-100">プライベートBOX</h1>
+<button class="w-12 text-sm font-semibold text-primary">編集</button>
+</header>
+<nav class="border-b border-slate-200 dark:border-slate-800 px-4">
+<div class="flex gap-8">
+<a class="border-b-2 border-primary py-3" href="#">
+<span class="text-sm font-bold text-primary">すべて</span>
+</a>
+<a class="border-b-2 border-transparent py-3" href="#">
+<span class="text-sm font-medium text-slate-500 dark:text-slate-400">ビデオ</span>
+</a>
+<a class="border-b-2 border-transparent py-3" href="#">
+<span class="text-sm font-medium text-slate-500 dark:text-slate-400">お気に入り</span>
+</a>
+</div>
+</nav>
+<main class="flex-1 overflow-y-auto p-3">
+<div class="grid grid-cols-3 gap-1 md:gap-2">
+<div class="relative aspect-square overflow-hidden rounded-lg bg-slate-200 dark:bg-slate-800">
+<img class="h-full w-full object-cover" data-alt="Fashionable woman in a colorful street setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9zrXRr1Zzbmxxs9Pi96v5AKeyvFQKnvrdJ-9hE6vKBTEr9ABI94wD7KGkuacbQe1lepjHiagt3wMGeURaNYkGz6Q0QWtN3VEubPqT96LHahS0cOFKT2971GiPw3DzJm8TxIc6P3oWeMlaG6WzkGEUhPY8mLGrbGm887d6WekPyVPw0zVUiPKn6sZxvmrRq1HiEFrYVsh1muwogu2dhUxDtfSDqYpS268VJPVzYy_5pMV00iKp_e2VFII7d-EtCboozdj8uoyL4uM"/>
+</div>
+<div class="relative aspect-square overflow-hidden rounded-lg bg-slate-200 dark:bg-slate-800">
+<img class="h-full w-full object-cover" data-alt="Aesthetic portrait of a young woman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZRNIkI5A5XhVNnvMCroh8O2M32NnE69DJrufeG8r4EKMVv5QN2vcSCgeIldhO94Cu9sLIENcLwW2xZAQ6xmnkRpjf5jyGn1hqZuDBr4mNBq0l5uSLGVJ6s1rOaLaZQJnpT0EhlybFUEg8ItnKhnZVd1nwN1AovQEuTBsAH_i86MGCL9Iuag44Ff0p2ZPHwE6yKU57gy6-2a3so4NIs9N_tWhtEb2VAL5QkzVA0Ikz6tcnuFdLsRLSDaDdd5RPxHVzUmc3_3AGqu8"/>
+<div class="absolute bottom-1 right-1 flex items-center gap-1 rounded bg-black/40 px-1 py-0.5 text-[10px] text-white backdrop-blur-sm">
+<span class="material-symbols-outlined !text-[12px] filled-icon">videocam</span>
+<span>0:15</span>
+</div>
+</div>
+<div class="relative aspect-square overflow-hidden rounded-lg bg-slate-200 dark:bg-slate-800 border-2 border-primary">
+<img class="h-full w-full object-cover opacity-80" data-alt="Happy woman smiling at the camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtLUVWeak8oWDCmWuFCppTeRWZwG4ddJ3CEvZYwwQ-QtmWcEr3OxayaN5p-tB6nrGzYBVA1ppKQwbe8tIm2CIdyjIdveNWiSvqq-25cC_IcvGBPzIoKp_K2vUyMIQ1qvblPMzfBTZ3VdFLEntg9ZsnwoTBYUI5NYlby137KLKYS1O9JjQJ1xJmuLMBMA6Hd2bv9UkS7MVb687Sjp7b-bq8t1fqk9TqJswhcyLdpRJysISHlOd_mSU0VdzaqazaF2-Raxj9nG1_eGg"/>
+<div class="absolute right-1 top-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-white">
+<span class="material-symbols-outlined !text-[14px]">check</span>
+</div>
+</div>
+<div class="relative aspect-square overflow-hidden rounded-lg bg-slate-200 dark:bg-slate-800">
+<img class="h-full w-full object-cover" data-alt="Close up portrait of a girl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI7-mYAWOhfWCMHs2zHb56E-1Qx2iMPpakrEJ8JvrDsJ3vrka-HUOo6eskv3o4xQ_iContUtOHF2Ez7LwyvBBmzq_zZIcU2hNWPqtv7XRUT73f5pZ79odXx4e32iT1Vg2ap8c_FJKEJCNkeyaIrSqj1mq1ZlrJUJqjySZ2cpLdS_7c74L_sK5s0qmonuBXvNkyluFqoEJUA3olZGTAEwRHZD4hrGn9h8ClcXog_dLxuUt6BYui-2A_XEb5yNh6niS_FwEc-Is0NYs"/>
+</div>
+<div class="relative aspect-square overflow-hidden rounded-lg bg-slate-200 dark:bg-slate-800">
+<img class="h-full w-full object-cover" data-alt="Street style photography of a model" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1Q1XOQhZ60yNNykRXtbs-EJsWXuuWBfgiHFgiKGPPUfoKPfXYR_Ebpjt59Wi222QfJlWSg1UA4rcSAPfMIyEuedQwR8wjDryv7BBXCvWuFOrRbzvSlBubI5mq94EuJKSl7ySFTvsYiuNq6OZ9jFpqecf-NhREgok6Qe2n3CjzujecCqQ8mfr4yz2dVr5y-rzqgYzx4VBrS45pS9cqCgzKyY0yxUCMRfmtTdFC6b8WASNloUUdPX_TSadIp5AqYsGaLxdBnCPf3pY"/>
+<div class="absolute bottom-1 right-1 flex items-center gap-1 rounded bg-black/40 px-1 py-0.5 text-[10px] text-white backdrop-blur-sm">
+<span class="material-symbols-outlined !text-[12px] filled-icon">videocam</span>
+<span>1:30</span>
+</div>
+</div>
+<div class="relative aspect-square overflow-hidden rounded-lg bg-slate-200 dark:bg-slate-800">
+<img class="h-full w-full object-cover" data-alt="Candid shot of a young person" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAER_tOMSAHU9HJzELb6pETH2OVNHba-nCmydx5icRKBUKca0Xji_Vlo1kcOd55Rr3S2aFj93WUVHwIkPUL91kx6VPseEyZVsQz5UmLsJf3u-jAGlQQYVFA_FkhAJZMVk9XcNORZqgcUdxKyUEv7JPzb3eI_Sbo9zxKwRAWBXQmbnU9e_pQZx_pex8mfdfPUCfnwIsFtKyrJE6VYe_qWLcbIkF4ELr5lriL7bAt9iJnyJ_TGxU77ErmLfdibfRb4KHAXWfzqvfyop0"/>
+</div>
+<div class="relative aspect-square overflow-hidden rounded-lg bg-slate-200 dark:bg-slate-800">
+<img class="h-full w-full object-cover" data-alt="Travel photography of a city landmark" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvC1MIg5K7JOyPTghpDNwKzyZxRWVqcuQ8uQ4_qhHscXp9jXxomVYOoShoRL0ueaOsCYLqWn4R2LgAaW2_AFOipcS88dxRdKw8KQscs_JwoHJhtHCV27g7HMtKS_j7je22XCHB_4EYWi1j6bzc4KbO2QcU_UMKY-4tDtVcaKL1uHx8mLUrXYEW9zIGZkfjkAd9Tl_98KvfAW_nd0NP8MzXrkJ1nncYkPA-1JLVsbihhpoJ0_t0jwmzeAYdoF9mvtd9juCMxeEIrPQ"/>
+</div>
+<div class="relative aspect-square overflow-hidden rounded-lg bg-slate-200 dark:bg-slate-800">
+<img class="h-full w-full object-cover" data-alt="Aesthetic food photography of a meal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAIw6TRERMrU5GiyLFmsedL31Uc5oFUBQdvFzPA8BPyA32CNCFH6CkpNgbTcpy0JRr2S9LjBGyb9uFA4yCm1m4FAVbW1jNBKfD2Ql41s8R46TwVxYENsvDMvl_VcTlSgw_WDL5UqvVpe2NxupX7ottwnEW5UdRrWP0htSaDhvmnwAC9MCSb7lecIZhcrHtxZCb5sfLFk6ljRBQ2km5BsYiHRfyeRX-WDLhvMlJnRNhKvA1_HkFkfS3ia9xcQLQknG8xMAVac6a56U"/>
+</div>
+<div class="relative aspect-square overflow-hidden rounded-lg bg-slate-200 dark:bg-slate-800">
+<img class="h-full w-full object-cover" data-alt="Beautiful sunset over the mountains" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwZaVYFnsB7hetkNKre4VoNkefzCe4Eh2z5oChAButoQsdfGuLA8WKo-9UKqPN0tNoiNLDBp9rh1hYkrAuOw6H9h1OztzWYnRBlDuuc8xWM9yzav8UEekprmp_JTLkjx2n7m5gS8SgiXndGkf4WwSqBczFACGgX05iu9lpLekqw0FF3oYVI9pUwM2VHAAFFzl6V9VAGw88gFNR-OPN8l9xmbYb9862IY8uqWcnilz8kPfDFP8r6LEO9DRLJ0JW_9EN71hrGMlJKw0"/>
+</div>
+<div class="relative aspect-square overflow-hidden rounded-lg bg-slate-200 dark:bg-slate-800">
+<img class="h-full w-full object-cover" data-alt="Lush green forest path sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5SRlvp3d6HTx0wL2Wnr_vE7WHRHr5QxQTVGbQ6qmatcklKFKNO_I_ny-wgO1oH-JRIKcTVifGY8tqnsW4qHqObaQHE1bi3m1XI8nafWFdtg4RaKbNNvcH3v7mFwKIOX4wQrhpu5fOL1r2VBBpUsKtF05wMtrShB2HJjLhs98M3retu377ZtAY_JsJpP-hCrDUXxhUUfgDbKjxDKbW48J_vHAl0qjwYj8upMhVb8-CLuhdrq6TmG57WP__GTBeoGyhlbgykVm4KWA"/>
+</div>
+<div class="relative aspect-square overflow-hidden rounded-lg bg-slate-200 dark:bg-slate-800">
+<img class="h-full w-full object-cover" data-alt="Scenic lake with mountains background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCezA3EglTIK9gkqItZXBcSzq4MLgRZCK_ILDYNmF1ZA4R7j3A-eCapBtHpQvNoLQwvJIYc4jStGBTO94KlmVopC6huWw0boFwx_F26oMdODoow0jE4O5rxUWmF5cuUNE0e4RkrNZzl7ivqHDqjyCkO3vfT5kvGpx3ew1bZPjz-kLYLq62_CSX34GUjfGn4rRnExmuQOYMDD3L9hh0WeAzUiT3ZfByya1Cg1X5VUmIyJ3FC6SHj3YIz7Q4ZFqR2SKYoxU9Bismki8"/>
+</div>
+<div class="relative aspect-square overflow-hidden rounded-lg bg-slate-200 dark:bg-slate-800">
+<img class="h-full w-full object-cover" data-alt="Person standing on top of a hill" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVIirm3v2H3Vab2raqHdVHeG47MChBlHr5Mk0UtQK8YKGrAl-iv4BlojX5p8aCPq_tkuJZF2SYpYocBTmNZHsFYwEk7x6f_6w2zhDRihHQUOSy5utAoS9sCtFO9zw2ikOsskwu_ym2dmXsxDoRFJHwM4r3FZ42FVP9fpEK8IstFQxDsnUeHqS3DJeqVearibmZlLtAOKarO7wIwQw07kkmbcIcHJUzN5CuIwqGOnji-QneWL3eB1uZlRVrTmvePeTa0aiYvRgt7Ew"/>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 z-10 border-t border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark pb-safe">
+<div class="flex gap-4 p-4">
+<button class="flex flex-1 flex-col items-center justify-center gap-1 rounded-xl bg-primary/10 py-3 text-primary transition-colors hover:bg-primary/20">
+<span class="material-symbols-outlined">download_for_offline</span>
+<span class="text-[10px] font-bold">カメラロールへ保存</span>
+</button>
+<button class="flex flex-1 flex-col items-center justify-center gap-1 rounded-xl bg-slate-100 dark:bg-slate-800 py-3 text-slate-500 dark:text-slate-400 transition-colors hover:bg-slate-200 dark:hover:bg-slate-700">
+<span class="material-symbols-outlined">delete_outline</span>
+<span class="text-[10px] font-bold">削除</span>
+</button>
+</div>
+<div class="flex items-center justify-around border-t border-slate-200 dark:border-slate-800 px-2 py-2">
+<a class="flex flex-col items-center gap-1 text-slate-400" href="#">
+<span class="material-symbols-outlined">photo_library</span>
+<span class="text-[10px]">アルバム</span>
+</a>
+<a class="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white shadow-lg shadow-primary/30" href="#">
+<span class="material-symbols-outlined !text-[28px] filled-icon">photo_camera</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined filled-icon">lock</span>
+<span class="text-[10px]">プライベート</span>
+</a>
+</div>
+</footer>
+</div>
+</body></html>

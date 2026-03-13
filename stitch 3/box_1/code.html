@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-effect {
+            backdrop-filter: blur(12px);
+            background-color: rgba(34, 22, 16, 0.85);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased overflow-hidden">
+<div class="relative flex h-screen w-full flex-col bg-cover bg-center" data-alt="Blurred professional camera lens and photography equipment" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA4es-7prHRHmJdGFEYQ5lq3_WnZBJA8nfFqkOWZLOHt-1hEQeq7iWTLpHTT_ESfhdCW4drIE4t9ctrKdUWjJKdwHmCk_M2JDWkN5NXCP2y-oSUQTTqHdvsv5PCit0KoCFJW76JmKvk9ULpz_z2Rgi9L1PjTfscovYIH4SrDFLgDzvFx7TgCfQBiyhV8ceiUoS8v1Te6l2jIIo3rMq2CUVpspVQPPPf9p6VCF3Qn2nzQ3Ur7I9rhUlvYlGyL4q1hbIhCa019PKx3HE');">
+<div class="absolute inset-0 glass-effect flex flex-col">
+<header class="flex items-center p-6 justify-between">
+<div class="text-slate-100 flex size-10 shrink-0 items-center justify-center rounded-full bg-white/10" data-icon="ArrowLeft">
+<span class="material-symbols-outlined">arrow_back</span>
+</div>
+<h2 class="text-slate-100 text-lg font-bold leading-tight tracking-tight">Kesu Camera</h2>
+<div class="size-10"></div>
+</header>
+<main class="flex-1 flex flex-col items-center justify-center px-6">
+<div class="mb-8 flex flex-col items-center">
+<div class="mb-6 size-16 bg-primary rounded-full flex items-center justify-center shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-white text-3xl">lock</span>
+</div>
+<h3 class="text-slate-100 tracking-tight text-xl font-medium leading-tight text-center">
+                        BOXを表示するにはパスコードを<br/>入力してください
+                    </h3>
+</div>
+<div class="flex justify-center gap-6 mb-12">
+<div class="size-4 rounded-full border-2 border-primary bg-primary"></div>
+<div class="size-4 rounded-full border-2 border-slate-400/50 bg-transparent"></div>
+<div class="size-4 rounded-full border-2 border-slate-400/50 bg-transparent"></div>
+<div class="size-4 rounded-full border-2 border-slate-400/50 bg-transparent"></div>
+</div>
+</main>
+<section class="w-full max-w-md mx-auto px-10 pb-12">
+<div class="grid grid-cols-3 gap-y-4 gap-x-8">
+<button class="flex h-16 w-16 items-center justify-center rounded-full bg-white/5 hover:bg-white/10 active:bg-primary/40 transition-colors text-white text-2xl font-semibold">1</button>
+<button class="flex h-16 w-16 items-center justify-center rounded-full bg-white/5 hover:bg-white/10 active:bg-primary/40 transition-colors text-white text-2xl font-semibold">2</button>
+<button class="flex h-16 w-16 items-center justify-center rounded-full bg-white/5 hover:bg-white/10 active:bg-primary/40 transition-colors text-white text-2xl font-semibold">3</button>
+<button class="flex h-16 w-16 items-center justify-center rounded-full bg-white/5 hover:bg-white/10 active:bg-primary/40 transition-colors text-white text-2xl font-semibold">4</button>
+<button class="flex h-16 w-16 items-center justify-center rounded-full bg-white/5 hover:bg-white/10 active:bg-primary/40 transition-colors text-white text-2xl font-semibold">5</button>
+<button class="flex h-16 w-16 items-center justify-center rounded-full bg-white/5 hover:bg-white/10 active:bg-primary/40 transition-colors text-white text-2xl font-semibold">6</button>
+<button class="flex h-16 w-16 items-center justify-center rounded-full bg-white/5 hover:bg-white/10 active:bg-primary/40 transition-colors text-white text-2xl font-semibold">7</button>
+<button class="flex h-16 w-16 items-center justify-center rounded-full bg-white/5 hover:bg-white/10 active:bg-primary/40 transition-colors text-white text-2xl font-semibold">8</button>
+<button class="flex h-16 w-16 items-center justify-center rounded-full bg-white/5 hover:bg-white/10 active:bg-primary/40 transition-colors text-white text-2xl font-semibold">9</button>
+<div class="flex h-16 w-16 items-center justify-center"></div>
+<button class="flex h-16 w-16 items-center justify-center rounded-full bg-white/5 hover:bg-white/10 active:bg-primary/40 transition-colors text-white text-2xl font-semibold">0</button>
+<button class="flex h-16 w-16 items-center justify-center rounded-full bg-transparent hover:bg-white/10 active:bg-primary/40 transition-colors text-white">
+<span class="material-symbols-outlined text-2xl">backspace</span>
+</button>
+</div>
+<div class="mt-8 flex justify-center">
+<button class="text-slate-400 text-sm font-medium hover:text-primary transition-colors">パスコードを忘れましたか？</button>
+</div>
+</section>
+</div>
+</div>
+</body></html>

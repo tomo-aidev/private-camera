@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "accent-green": "#44e47e",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>.viewfinder-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuAwkjeVeHWhSykOqbZlll0fcnfe6JKrCdJtpm91TwxEvUavQT-qIj-if9g0kUt4G_fxe09nP-PypMznij92YcUirgTNKT1hvT59aRQhUJKAeEZQTv_e4gbUBBveI5BKtLqB0X5Y5Ywo2qkF4nV1rHRbHsOpT1P2prgGAj4G3NyAn29ioVAp_55iQPpP_mygF0cwGfZrfzpwJ7mPZyZmtth9Ed8a_e6Yo7QeKfqzc7kmRAvgRJ6rqJZHJoLExDvdU7r1q40bm-pnnNk);
+    background-size: cover;
+    background-position: center
+    }
+.zoom-arc {
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 0
+    }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background-dark font-display text-slate-100 overflow-hidden h-screen w-full flex flex-col">
+<!-- Header: Thin, semi-transparent -->
+<header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-black/10 backdrop-blur-sm">
+<button class="flex items-center justify-center p-2 rounded-full hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-xl">flash_on</span>
+</button>
+<div class="flex items-center gap-6">
+<button class="flex items-center justify-center p-2 rounded-full hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-xl text-white/80">flash_on</span>
+</button>
+<button class="flex items-center justify-center p-2 rounded-full hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-xl text-white/80">settings</span>
+</button>
+</div>
+</header>
+<!-- Viewfinder: Full screen -->
+<main class="flex-1 relative viewfinder-bg" data-alt="A cinematic Japanese street scene during golden hour">
+<!-- Focus Ring (Visual Element) -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border border-accent-green/60 size-20 rounded-lg pointer-events-none">
+<div class="absolute -top-1 -left-1 size-3 border-t-2 border-l-2 border-accent-green"></div>
+<div class="absolute -top-1 -right-1 size-3 border-t-2 border-r-2 border-accent-green"></div>
+<div class="absolute -bottom-1 -left-1 size-3 border-b-2 border-l-2 border-accent-green"></div>
+<div class="absolute -bottom-1 -right-1 size-3 border-b-2 border-r-2 border-accent-green"></div>
+</div>
+</main>
+<!-- Footer: Thin overlay & Controls -->
+<footer class="fixed bottom-0 left-0 right-0 z-50 flex flex-col items-center pb-8 pt-4 bg-gradient-to-t from-black/80 to-transparent">
+<!-- Zoom Arc UI -->
+<div class="relative w-64 h-12 mb-4 flex items-center justify-center">
+<div class="zoom-arc absolute inset-0 opacity-40"></div>
+<div class="flex justify-between w-full px-6 text-[10px] font-bold tracking-widest text-white/60">
+<span>0.5x</span>
+<span class="text-accent-green">1x</span>
+<span>2x</span>
+<span>5x</span>
+</div>
+<!-- Arc indicator -->
+<div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 size-1.5 bg-accent-green rounded-full shadow-[0_0_8px_#44e47e]"></div>
+</div>
+<!-- Mode Switcher -->
+<div class="flex items-center gap-8 mb-8">
+<button class="text-xs font-bold tracking-widest text-white/40 hover:text-white transition-colors">ビデオ</button>
+<button class="text-xs font-bold tracking-widest text-white relative">
+                写真
+                <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 size-1 bg-accent-green rounded-full"></span>
+</button>
+<button class="text-xs font-bold tracking-widest text-white/40 hover:text-white transition-colors">LIVE</button>
+</div>
+<!-- Main Interaction Bar -->
+<div class="w-full max-w-md px-10 flex items-center justify-between">
+<!-- Secret Box / Lock Icon -->
+<button class="flex flex-col items-center gap-1 group">
+<div class="size-12 rounded-full border border-white/10 bg-white/5 flex items-center justify-center group-active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-white/80">photo_library</span>
+</div>
+</button>
+<!-- Large Clean Shutter Button -->
+<button class="relative group">
+<div class="size-20 rounded-full bg-white flex items-center justify-center shadow-lg group-active:scale-90 transition-transform duration-75">
+<div class="size-16 rounded-full border-2 border-black/5"></div>
+</div>
+<!-- Green Accent Ring -->
+<div class="absolute -inset-2 rounded-full border-2 border-accent-green/20 scale-100 group-active:scale-110 transition-transform duration-300"></div>
+</button>
+<!-- Gallery Shortcut -->
+<button class="group">
+<div class="size-12 rounded-full border border-white/10 bg-white/5 flex items-center justify-center group-active:scale-95 transition-transform"><span class="material-symbols-outlined text-white/80">flip_camera_ios</span></div>
+</button>
+</div>
+<!-- Home Indicator (Simulated) -->
+<div class="mt-8 w-32 h-1 bg-white/20 rounded-full"></div>
+</footer>
+<!-- Grid Overlay (Optional minimalist toggle) -->
+<div class="fixed inset-0 pointer-events-none z-10 grid grid-cols-3 grid-rows-3 opacity-20">
+<div class="border-r border-b border-white/30"></div>
+<div class="border-r border-b border-white/30"></div>
+<div class="border-b border-white/30"></div>
+<div class="border-r border-b border-white/30"></div>
+<div class="border-r border-b border-white/30"></div>
+<div class="border-b border-white/30"></div>
+<div class="border-r border-white/30"></div>
+<div class="border-r border-white/30"></div>
+<div></div>
+</div>
+</body></html>
